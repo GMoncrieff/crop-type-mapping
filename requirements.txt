@@ -12,3 +12,11 @@ setproctitle
 hyperopt
 jupyter
 geopandas
+Cython
+pyunpack
+PyWavelets
+pyts
+fire
+nvidia-ml-py3
+fastai
+tslearn

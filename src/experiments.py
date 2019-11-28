@@ -83,19 +83,19 @@ def experiments(args):
 
     elif args.experiment == "isprs_rf_tum_23classes":
         args = merge([args, TUM_dataset])
-        args.classmapping = "/data/BavarianCrops/classmapping.isprs.csv"
+        args.classmapping = "/classmapping.isprs.csv"
         return args
     elif args.experiment == "isprs_rf_gaf_23classes":
         args = merge([args, GAF_dataset])
-        args.classmapping = "/data/BavarianCrops/classmapping.isprs.csv"
+        args.classmapping = "/classmapping.isprs.csv"
         return args
     elif args.experiment == "isprs_rf_tum_12classes":
         args = merge([args, TUM_dataset])
-        args.classmapping = "/data/BavarianCrops/classmapping.isprs2.csv"
+        args.classmapping = "/classmapping.isprs2.csv"
         return args
     elif args.experiment == "isprs_rf_gaf_12classes":
         args = merge([args, GAF_dataset])
-        args.classmapping = "/data/BavarianCrops/classmapping.isprs2.csv"
+        args.classmapping = "/classmapping.isprs2.csv"
         return args
 
 

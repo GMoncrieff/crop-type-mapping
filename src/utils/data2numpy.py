@@ -16,7 +16,8 @@ def get_data(experiment, N_per_class=None, N_largest=None, do_add_spectral_indic
     assert N_largest is None or isinstance(N_largest, int)
     assert isinstance(do_add_spectral_indices, bool)
 
-    args = argparse.Namespace(experiment=experiment, seed=0, batchsize=256, workers=0, mode=None, hparamset=0)
+  #  args = argparse.Namespace(experiment=experiment, dataroot=../data, seed=0, batchsize=256, workers=0, mode=None, hparamset=0)
+    args = argparse.Namespace(experiment=experiment, dataroot='/home/glennmoncrieff/crop-type-mapping/notebooks/data', seed=0, batchsize=256, workers=0, mode=None, hparamset=0)
     args = experiments(args)
 
     traindataloader, testdataloader = prepare_dataset(args)
